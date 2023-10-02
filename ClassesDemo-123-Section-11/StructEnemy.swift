@@ -8,6 +8,8 @@
 import Foundation
 
 struct StructEnemy {
-    let health: Int
-    let attackStrength: Int
+    var health: Int
+    var attackStrength: Int
+    
+    // If we don't set properties to a value in a struct, we don't have to initialize it. We can use it directly.
 }

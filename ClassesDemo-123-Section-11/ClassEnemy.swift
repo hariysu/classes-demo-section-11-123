@@ -8,6 +8,12 @@
 import Foundation
 
 class ClassEnemy {
-    let health: Int = 0
-    let attackStrength: Int = 0
+    var health: Int
+    var attackStrength: Int
+    
+    // If we don't set properties to a value in a class, we have to initialize it.
+    init(health: Int, attackStrength: Int) {
+        self.health = health
+        self.attackStrength = attackStrength
+    }
 }
