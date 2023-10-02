@@ -16,4 +16,9 @@ class ClassEnemy {
         self.health = health
         self.attackStrength = attackStrength
     }
+    
+    // This class is mutable. We doesn't have to turn func into mutating func because we can change the property (health) of the class directly.
+    func takeDamage(amountOfDamage: Int){
+        health = health - amountOfDamage
+    }
 }
